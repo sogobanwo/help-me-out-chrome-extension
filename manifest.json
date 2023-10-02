@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Help Me Out Video Recorder",
+  "version": "1.0",
+  "description": "An extension that helps users record videos",
+  "icons": {
+    "128": "Logo16.png",
+    "48": "Logo16.png",
+    "16": "Logo16.png"
+  },
+  "action": {
+    "default_icon": "Logo16.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
